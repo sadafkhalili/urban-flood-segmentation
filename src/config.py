@@ -42,7 +42,7 @@ TEST_RATIO = 0.15
 MODEL_NAME = "unet"
 ENCODER_NAME = "resnet18"
 ENCODER_WEIGHTS = "imagenet"
-IN_CHANNELS = 3
+IN_CHANNELS = 8
 
 # ============================
 # Training
