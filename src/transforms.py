@@ -9,7 +9,6 @@ def get_train_transforms():
         A.Resize(IMAGE_SIZE, IMAGE_SIZE),
         A.HorizontalFlip(p=0.5),
         A.RandomRotate90(p=0.5),
-        A.Normalize(),
         ToTensorV2(),
     ])
 
@@ -17,7 +16,6 @@ def get_train_transforms():
 def get_validation_transforms():
     return A.Compose([
         A.Resize(IMAGE_SIZE, IMAGE_SIZE),
-        A.Normalize(),
         ToTensorV2(),
     ])
 
